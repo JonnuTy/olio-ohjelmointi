@@ -36,3 +36,8 @@ Student::Student(string n, int sN, double avg) {
     studentNumber = sN;
     average = avg;
 }
+
+Student::~Student()
+{
+
+}

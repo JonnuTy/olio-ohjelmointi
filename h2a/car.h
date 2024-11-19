@@ -11,6 +11,7 @@ private:
     int yearModel;
 public:
     Car(string, string, int);
+    ~Car();
     string getBrand() const;
     void setBrand(const string &newBrand);
     string getModel() const;

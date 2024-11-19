@@ -1,6 +1,8 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 #include <iostream>
+#include <memory>
+
 using namespace std;
 
 class Student
@@ -11,6 +13,7 @@ private:
     double average;
 public:
     Student(string, int, double);
+    ~Student();
     string getName() const;
     void setName(const string &newName);
     int getStudentNumber() const;

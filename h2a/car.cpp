@@ -39,3 +39,8 @@ Car::Car(string brnd, string mdl, int ymdl) {
     model = mdl;
     yearModel = ymdl;
 }
+
+Car::~Car()
+{
+
+}

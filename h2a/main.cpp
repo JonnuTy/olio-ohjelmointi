@@ -8,12 +8,9 @@ using namespace std;
 
 int main()
 {
-    Car *objCar1=new Car("Volkswagen","Passat",2011);
+    Car objCar1("Volkswagen","Passat",2011);
 
-    objCar1->printData();
-
-    delete objCar1;
-    objCar1=nullptr;
+    objCar1.printData();
 
     Rectangle *objRectangle1=new Rectangle(2,3);
 
@@ -22,12 +19,9 @@ int main()
     delete objRectangle1;
     objRectangle1=nullptr;
 
-    Student* objStudent1 = new Student("Jaakko", 1234, 8.7);
+    shared_ptr<Student> objStudent2 = make_shared<Student>("Jaakko", 1234, 8.7);
 
-    cout<<objStudent1->getName()<<" "<<objStudent1->getStudentNumber()<<", "<<objStudent1->getAverage()<<endl;
-
-    delete objStudent1;
-    objStudent1=nullptr;
+    cout<<objStudent2->getName()<<" "<<objStudent2->getStudentNumber()<<", "<<objStudent2->getAverage()<<endl;
 
     return 0;
 }
