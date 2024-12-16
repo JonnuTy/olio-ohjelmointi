@@ -9,7 +9,7 @@ class Animal
 public:
     Animal();
     ~Animal();
-    void callOut();
+    virtual void callOut();
 };
 
 #endif // ANIMAL_H
